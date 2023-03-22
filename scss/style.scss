@@ -1,0 +1,205 @@
+$icon-size:50px;
+$dark-overlay:rgba(0,0,0,0.5);
+.navbar{
+  background-color: #000;
+  .nav-item{
+    padding-left: 1em;
+    .nav-link{
+      text-transform: uppercase;
+    }
+  }
+}
+  .carousel-item{
+    height: 450px;
+  }
+  .carousel-img-1{
+    background: url('../img/image1.jpeg');
+    background-size: cover;
+  }
+  .carousel-img-2{
+    background: url('../img/image2.jpeg');
+    background-size: cover;
+  }
+  .carousel-img-3{
+    background: url('../img/image3.jpeg');
+    background-size: cover;
+  }
+  #homeIcon{
+    .fa{
+      font-size:$icon-size;
+      margin-bottom: 15px;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  #getStarted{
+    background: url('../img/pc.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    background-attachment: fixed;
+    position: relative;
+    .dark-overlay{
+      background: $dark-overlay;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #home-video{
+    background: url('../img/people.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 250px;
+    position: relative;
+    .dark-overlay{
+      background: $dark-overlay;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      .fa{
+        font-size: $icon-size;
+      }
+    }
+  }
+  #gallery{
+    img{
+      min-height: 250px;
+    }
+  }
+  #footer-area{
+    background: #000;
+    color: #fff;
+  }
+  #about-header{
+    background: url('../img/image2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px;
+    position: relative;
+    .dark-overlay{
+      background: $dark-overlay;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+  #whatWeDo{
+    img{
+      height: 350px;
+      width: 350px;
+    }
+  }
+  #boxes{
+    .fa{
+      font-size: $icon-size;
+    }
+  }
+#testimonial{
+  .slick-prev::before,
+  .slick-next::before{
+    color: #000;
+  }
+}
+#services-header{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  background-attachment: fixed;
+  .dark-overlay{
+    background: $dark-overlay;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+#blog-header{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+  min-height: 200px;
+  background-attachment: fixed;
+}
+#blogPost{
+  img{
+    height: 250px;
+    width: auto;
+  }
+}
+#contact-header{
+  background: url('../img/people.jpeg');
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  background-attachment: fixed;
+  .dark-overlay{
+    background: $dark-overlay;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+#contact-form{
+  .ferdous-mp{
+    .card{
+      h3,p,address{
+        margin: 6px;
+      }
+    }
+  }
+}
+@media(max-width:767px){
+  #getStarted{
+    min-height: 300px;
+  }
+}
+@media(max-width:576px){
+  .carousel-caption{
+    h3{
+      font-size: 2.5rem;
+    }
+  }
+  #getStarted{
+    min-height: 350px;
+  }
+}
+@media(max-width: 480px){
+  #getStarted{
+    min-height: 375px;
+  }
+}
+@media(max-width:360px){
+  #getStarted{
+    min-height: 400px;
+  }
+  #contact-header{
+    min-height: 250px;
+  }
+  #about-header{
+    min-height: 250px;
+  }
+  #services-header{
+    min-height: 250px;
+  }
+}
+@media(max-width:320px){
+  .carousel-caption{
+    p{
+      font-size: 1.1rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+  }
+}
